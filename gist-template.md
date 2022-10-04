@@ -18,9 +18,6 @@ For example, the following regular expression can be used to verify that user in
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -74,12 +71,6 @@ Brackets allow you to match different character classes in the same space. For i
 
 The quantifiers ( * + {}) are greedy operators. They allow you to express letters that are between two letters in the alphabet as well as numbers between two digits to be valid.
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This is a tutorial on a regular expression validating an email address, by Louie Moretti. Find more of my work at my <a href="https://github.com/Morettilouie">GitHub</a> page.
