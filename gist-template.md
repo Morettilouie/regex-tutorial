@@ -47,17 +47,32 @@ The + in our example of an email validation is to signify that the string will b
 
 ### OR Operator
 
-
+| or []
+The brackets in the email validation surround all the characters that can be included in the string.
 
 ### Character Classes
 
+\d \w \s and .
+/d means the string can match any digit.
+. means the string can match any character
+When combined with the \ anchor, \. [a-z] accepts any letter between a and z, [0-9] accepts any digit between 0 and 9
+
 ### Flags
+
+slashes surround the expression 
 
 ### Grouping and Capturing
 
+()
+The parenthesis capture the validation of characters inside the brackets and then allows the quantifier + to add the @ and another string.
+
 ### Bracket Expressions
 
+Brackets allow you to match different character classes in the same space. For instance [a-z0-9] allows you to have letters and numbers in the same expression.
+
 ### Greedy and Lazy Match
+
+The quantifiers ( * + {}) are greedy operators. They allow you to express letters that are between two letters in the alphabet as well as numbers between two digits to be valid.
 
 ### Boundaries
 
