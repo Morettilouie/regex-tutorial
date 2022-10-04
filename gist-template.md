@@ -24,13 +24,30 @@ For example, the following regular expression can be used to verify that user in
 
 ## Regex Components
 
+There are three compontents that go into an email validation.
 
+Component 1: ([a-z0-9_\.-]+)
+In this component the "/^" indicates that what comes next is how the emails username is allowed to be entered. Inside the parenthesis, the brackets encapsulate that any letters from a-z, any numbers from 0-9, and any underscores, slashes, periods, or dashes can be entered as valid characters.
+
+Component 2: ([\da-z\.-]+)
+This component comes after an @ symbol which is what seperates the first component from the second. All this means is when you've finished the username type "@" which dictates that it is now time to enter the email domain. It allows letters, numbers, and dashes.
+
+Component 3: ([a-z\.]{2,6})
+This component comes after a period and involves any letters.
 
 ### Anchors
 
+^ and $
+^ signifies the beginning parameters^([a-z0-9_\.-]+) of a string and $ signifies the parameters([a-z\.]{2,6})$ of end of a string.
+
 ### Quantifiers
 
+* + ? and {}
+The + in our example of an email validation is to signify that the string will be followed by one or more strings. The {2,6} signifies that the string [a-z\.] can include between 2-6 characters.
+
 ### OR Operator
+
+
 
 ### Character Classes
 
